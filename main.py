@@ -33,7 +33,7 @@ def validation():
         verify_error = "The verification of the password does NOT match"
     # email_error
     if not email == '':
-        if not 3 < len(email) < 20 or " " in email or email.count("@") > 1 or email.count(".") > 1:
+        if not 2 < len(email) < 20 or " " in email or not email.count("@") == 1 or not email.count(".") == 1:
             email_error = "Format the email properly"
  
     # combining all errors
